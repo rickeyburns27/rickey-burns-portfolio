@@ -1,0 +1,78 @@
+/* V2 in-depth profile. Isolated to keep the approved V1 styling unchanged. */
+.deep-skills-section{background:linear-gradient(145deg,#f8fbfd,#eaf2f7)}
+.skills-intro{display:flex;gap:24px;align-items:start;padding:25px 30px;margin-bottom:21px;border:1px solid #d7e6ee;background:#fff;border-radius:16px;box-shadow:0 12px 28px #193e5b08}
+.skills-intro-mark{font-size:10px;font-weight:850;letter-spacing:.16em;color:var(--green-deep);white-space:nowrap;padding-top:5px}
+.skills-intro p{color:#4b677b;font-size:14px;line-height:1.8;margin:0;max-width:890px}
+.skills-intro strong{color:var(--navy)}
+.deep-skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.deep-skill-card{min-width:0;padding:29px 27px;border:1px solid #d9e6ee;background:#fff;border-radius:19px;box-shadow:0 12px 40px #1137530b;transition:transform .35s var(--ease),box-shadow .35s}
+.deep-skill-card:hover{transform:translateY(-5px);box-shadow:0 24px 48px #11375317}
+.skill-category{display:block;color:var(--green-deep);font-weight:850;font-size:10px;letter-spacing:.13em;margin-bottom:23px}
+.deep-skill-card h3{font-size:24px;line-height:1.2;letter-spacing:-.035em;margin-bottom:14px}
+.deep-skill-card>p{font-size:13.5px;line-height:1.75;color:var(--muted)}
+.skill-pills{list-style:none;display:flex;flex-wrap:wrap;gap:7px;padding:0;margin:24px 0 0}
+.skill-pills li{font-size:11px;font-weight:700;color:#245271;padding:8px 11px;border:1px solid #d5e7f1;border-radius:7px;background:#f1f7fb}
+.deep-skill-card .skill-qualifier{font-size:11px;color:#6d7f8d;border-top:1px solid #e7edf2;padding-top:15px;margin:18px 0 0}
+.deep-career-section{background:var(--navy-deep);color:white}
+.deep-career-section .section-heading>p{color:#b6cfe0}
+.deep-career-section .section-heading h2 em{color:var(--green)}
+.deep-career-section .eyebrow{color:#8fcda2}
+.role-list{display:grid;gap:13px}
+.role-card{background:#11304b;border:1px solid #6187a34a;border-radius:17px;overflow:hidden;transition:border-color .25s,background .25s}
+.role-card[open]{background:#143653;border-color:#6ca9b560}
+.role-card summary{list-style:none;display:grid;grid-template-columns:175px 1fr 30px;gap:24px;align-items:center;padding:25px 28px;cursor:pointer;min-height:98px}
+.role-card summary::-webkit-details-marker{display:none}
+.role-card summary:focus-visible{outline:3px solid var(--green);outline-offset:-4px}
+.role-years{font-size:11px;letter-spacing:.1em;font-weight:800;color:#9cbed1}
+.role-heading{display:flex;flex-direction:column;gap:5px}
+.role-heading strong{font-size:20px;line-height:1.25;letter-spacing:-.025em;color:#fff}
+.role-heading small{font-size:12px;line-height:1.5;color:#b4cbdd}
+.role-toggle{display:grid;place-items:center;height:30px;width:30px;border-radius:50%;background:#7cbe8930;color:#ace0b7;font-size:24px;transition:transform .25s}
+.role-card[open] .role-toggle{transform:rotate(45deg)}
+.role-body{padding:0 34px 30px 227px;border-top:1px solid #ffffff12}
+.role-body>p{font-size:14px;line-height:1.8;color:#cedfe9;margin:23px 0}
+.role-body ul{padding-left:20px;margin:0;display:grid;gap:12px}
+.role-body li{font-size:13px;line-height:1.65;color:#c4d9e7}
+.role-body strong{color:#9cdeab}
+.deep-delivery-section{background:#f8fafc}
+.delivery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.delivery-grid article{padding:24px 19px 27px;border-top:3px solid var(--green-deep);background:#eaf2f6;border-radius:0 0 13px 13px}
+.delivery-number{font-size:11px;letter-spacing:.15em;font-weight:850;color:var(--green-deep)}
+.delivery-grid h3{font-size:18px;line-height:1.25;letter-spacing:-.025em;margin:23px 0 12px}
+.delivery-grid p{font-size:12.5px;line-height:1.8;color:var(--slate);margin:0}
+.credentials-panel{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;margin-top:50px;padding:41px 43px;border-radius:21px;color:#fff;background:linear-gradient(130deg,#153955,#0c2038);box-shadow:0 22px 50px #12375320}
+.credentials-panel h3{font-size:29px;margin:20px 0 26px}
+.credentials-panel p:not(.eyebrow){font-size:13px;line-height:1.75;color:#cbdce8;margin-bottom:11px}
+.credentials-panel p strong{color:#fff}
+.resume-panel{border-left:1px solid #85a3bc55;padding-left:39px;display:flex;flex-direction:column;align-items:start;justify-content:center}
+.resume-panel-label{color:#9ed4ad;letter-spacing:.14em;font-size:10px;font-weight:800}
+.resume-panel h4{font-size:25px;letter-spacing:-.03em;margin:16px 0 10px}
+.resume-panel .btn{margin-top:12px}
+@media(max-width:1050px){
+  .deep-skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .delivery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:800px){
+  .deep-skills-grid{gap:13px}.deep-skill-card{padding:25px 22px}
+  .role-card summary{grid-template-columns:130px 1fr 30px;gap:15px;padding:21px 18px}
+  .role-body{padding-left:163px}
+  .credentials-panel{grid-template-columns:1fr;gap:28px}
+  .resume-panel{border-left:0;border-top:1px solid #85a3bc55;padding:26px 0 0}
+}
+@media(max-width:580px){
+  .skills-intro{padding:20px;gap:10px;flex-direction:column}
+  .deep-skills-grid{grid-template-columns:1fr}
+  .deep-skill-card h3{font-size:21px}
+  .role-card summary{grid-template-columns:1fr 27px;gap:12px;padding:19px}
+  .role-years{grid-column:1;grid-row:1}
+  .role-heading{grid-column:1;grid-row:2}.role-heading strong{font-size:18px}
+  .role-toggle{grid-column:2;grid-row:1 / span 2}
+  .role-body{padding:0 20px 23px}
+  .role-body>p{margin-top:21px}
+  .delivery-grid{grid-template-columns:1fr}
+  .delivery-grid article{padding:20px}
+  .delivery-grid h3{margin-top:12px}
+  .credentials-panel{padding:27px 23px;margin-top:30px}
+  .credentials-panel h3{font-size:24px}
+  .resume-panel .btn{width:100%;white-space:normal}
+}
