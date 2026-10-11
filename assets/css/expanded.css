@@ -9,7 +9,7 @@
 .deep-skill-card{min-width:0;padding:29px 27px;border:1px solid #d9e6ee;background:#fff;border-radius:19px;box-shadow:0 12px 40px #1137530b;transition:transform .35s var(--ease),box-shadow .35s}
 .deep-skill-card:hover{transform:translateY(-5px);box-shadow:0 24px 48px #11375317}
 .skill-category{display:block;color:#39734e;font-weight:850;font-size:10px;letter-spacing:.13em;margin-bottom:23px}
-.deep-skill-card h3{font-size:24px;line-height:1.2;letter-spacing:-.035em;margin-bottom:14px}
+.deep-skill-card h3{font-size:24px;line-height:1.25;letter-spacing:-.012em;margin-bottom:14px}
 .deep-skill-card>p{font-size:13.5px;line-height:1.75;color:var(--muted)}
 .skill-pills{list-style:none;display:flex;flex-wrap:wrap;gap:7px;padding:0;margin:24px 0 0}
 .skill-pills li{font-size:11px;font-weight:700;color:#245271;padding:8px 11px;border:1px solid #d5e7f1;border-radius:7px;background:#f1f7fb}
@@ -26,10 +26,12 @@
 .role-card summary:focus-visible{outline:3px solid var(--green);outline-offset:-4px}
 .role-years{font-size:11px;letter-spacing:.1em;font-weight:800;color:#9cbed1}
 .role-heading{display:flex;flex-direction:column;gap:5px}
-.role-heading strong{font-size:20px;line-height:1.25;letter-spacing:-.025em;color:#fff}
+.role-heading strong{font-size:20px;line-height:1.28;letter-spacing:-.012em;color:#fff}
 .role-heading small{font-size:12px;line-height:1.5;color:#b4cbdd}
-.role-toggle{display:grid;place-items:center;height:30px;width:30px;border-radius:50%;background:#7cbe8930;color:#ace0b7;font-size:24px;transition:transform .25s}
-.role-card[open] .role-toggle{transform:rotate(45deg)}
+.role-toggle{position:relative;display:block;flex-shrink:0;height:30px;width:30px;border-radius:50%;background:#7cbe8930;color:#ace0b7}
+.role-toggle::before,.role-toggle::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);height:2px;width:12px;background:currentColor;border-radius:2px}
+.role-toggle::after{width:2px;height:12px;transition:opacity .2s}
+.role-card[open] .role-toggle::after{opacity:0}
 .role-body{padding:0 34px 30px 227px;border-top:1px solid #ffffff12}
 .role-body>p{font-size:14px;line-height:1.8;color:#cedfe9;margin:23px 0}
 .role-body ul{padding-left:20px;margin:0;display:grid;gap:12px}
@@ -39,7 +41,7 @@
 .delivery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
 .delivery-grid article{padding:24px 19px 27px;border-top:3px solid var(--green-deep);background:#eaf2f6;border-radius:0 0 13px 13px}
 .delivery-number{font-size:11px;letter-spacing:.15em;font-weight:850;color:#39734e}
-.delivery-grid h3{font-size:18px;line-height:1.25;letter-spacing:-.025em;margin:23px 0 12px}
+.delivery-grid h3{font-size:18px;line-height:1.28;letter-spacing:-.012em;margin:23px 0 12px}
 .delivery-grid p{font-size:12.5px;line-height:1.8;color:var(--slate);margin:0}
 .credentials-panel{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;margin-top:50px;padding:41px 43px;border-radius:21px;color:#fff;background:linear-gradient(130deg,#153955,#0c2038);box-shadow:0 22px 50px #12375320}
 .credentials-panel h3{font-size:29px;margin:20px 0 26px}
@@ -48,7 +50,7 @@
 .credentials-panel p strong{color:#fff}
 .resume-panel{border-left:1px solid #85a3bc55;padding-left:39px;display:flex;flex-direction:column;align-items:start;justify-content:center}
 .resume-panel-label{color:#9ed4ad;letter-spacing:.14em;font-size:10px;font-weight:800}
-.resume-panel h4{font-size:25px;letter-spacing:-.03em;margin:16px 0 10px}
+.resume-panel h4{font-size:25px;letter-spacing:-.012em;margin:16px 0 10px}
 .resume-panel .btn{margin-top:12px}
 @media(max-width:1050px){
   .deep-skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -87,7 +89,7 @@
 .insurance-story{padding:29px 27px 28px;border:1px solid #dae7ef;background:linear-gradient(155deg,#f7fbfe,#eaf2f7);border-radius:17px;box-shadow:0 14px 35px #1038530a}
 .insurance-story-header{display:flex;align-items:center;justify-content:space-between;gap:18px;color:#39734e;font-size:10px;letter-spacing:.12em;font-weight:850;margin-bottom:24px}
 .insurance-story-header>span:first-child{font-size:25px;color:var(--blue);letter-spacing:-.04em}
-.insurance-story h3{font-size:23px;line-height:1.19;letter-spacing:-.035em;margin-bottom:18px}
+.insurance-story h3{font-size:23px;line-height:1.25;letter-spacing:-.012em;margin-bottom:18px}
 .insurance-story>p{font-size:13px;line-height:1.8;color:var(--slate);margin:0 0 24px}
 .insurance-chips{display:flex;gap:7px;flex-wrap:wrap}
 .insurance-chips span{font-size:10.5px;color:#265673;font-weight:720;padding:8px 9px;border:1px solid #d0e1eb;border-radius:6px;background:#fff}
@@ -130,7 +132,7 @@
 .built-app-body{padding:27px 27px 29px;display:flex;flex-direction:column;flex:1}
 .built-app-kicker{display:flex;gap:13px;justify-content:space-between;align-items:center;flex-wrap:wrap;color:#a4d8b3;font-weight:850;font-size:10px;letter-spacing:.12em}
 .app-kind{letter-spacing:0;color:#c6dbe9;border:1px solid #98bfd344;background:#ffffff0c;padding:7px 9px;border-radius:5px}
-.built-app-body h3{font-size:28px;letter-spacing:-.04em;margin:19px 0 15px}
+.built-app-body h3{font-size:28px;letter-spacing:-.012em;margin:19px 0 15px}
 .built-app-body>p{color:#c7dbe9;font-size:13px;line-height:1.77}
 .app-capabilities{margin:11px 0 22px;padding-left:18px;display:grid;gap:9px}
 .app-capabilities li{font-size:12.5px;line-height:1.62;color:#dfebf3}
