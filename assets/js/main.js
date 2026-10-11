@@ -165,13 +165,21 @@
     addEventListener('resize', () => { if (innerWidth > 800) setOpen(false); });
   }
 
+
+  function initBackToTop() {
+    qsa('[data-scroll-top]').forEach(link => link.addEventListener('click', event => {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+    }));
+  }
+
   function initContactLinks() {
     qs('#linkedin-link').href = data.contact.linkedin;
     qs('#email-link').href = `mailto:${data.contact.email}`;
   }
 
   renderMetrics(); renderCareer(); renderCases(); renderPrinciples();
-  initContactLinks(); initMobileNav(); initReveals();
+  initContactLinks(); initMobileNav(); initBackToTop(); initReveals();
   animateCounters(qsa('.metric-digits'));
   initProgressAndTimeline();
 })();
