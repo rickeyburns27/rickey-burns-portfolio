@@ -85,7 +85,7 @@
 .insurance-depth-section{background:#fff}
 .insurance-story-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
 .insurance-story{padding:29px 27px 28px;border:1px solid #dae7ef;background:linear-gradient(155deg,#f7fbfe,#eaf2f7);border-radius:17px;box-shadow:0 14px 35px #1038530a}
-.insurance-story-header{display:flex;align-items:center;justify-content:space-between;gap:18px;color:var(--green-deep);font-size:10px;letter-spacing:.12em;font-weight:850;margin-bottom:24px}
+.insurance-story-header{display:flex;align-items:center;justify-content:space-between;gap:18px;color:#39734e;font-size:10px;letter-spacing:.12em;font-weight:850;margin-bottom:24px}
 .insurance-story-header>span:first-child{font-size:25px;color:var(--blue);letter-spacing:-.04em}
 .insurance-story h3{font-size:23px;line-height:1.19;letter-spacing:-.035em;margin-bottom:18px}
 .insurance-story>p{font-size:13px;line-height:1.8;color:var(--slate);margin:0 0 24px}
@@ -121,7 +121,7 @@
 .app-preview-lines{display:flex;flex-direction:column;gap:5px;margin:12px 0 2px}
 .app-preview-lines i{height:5px}
 .app-preview-lines i:nth-child(2){width:77%}.app-preview-lines i:nth-child(3){width:54%}
-.app-preview-study .app-preview-logo{background:#469569}
+.app-preview-study .app-preview-logo{background:#39734e}
 .app-preview-study .app-preview-tabs .selected{background:#40835e;border-color:#40835e}
 .study-preview-row{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #dce9f0;border-radius:7px;padding:11px;margin-bottom:10px}
 .study-preview-ring{width:38px;height:38px;flex:0 0 38px;border-radius:50%;border:6px solid #72bb84;border-left-color:#d4e9d9;transform:rotate(-30deg)}
@@ -166,3 +166,4 @@
   .apps-takeaway{padding:20px 18px;gap:14px}
   .apps-takeaway-accent{height:85px}
 }
+@media(prefers-reduced-motion:reduce){.built-app-card:hover{transform:none}}
