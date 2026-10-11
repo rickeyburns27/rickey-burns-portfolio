@@ -78,3 +78,91 @@
   .credentials-panel h3{font-size:24px}
   .resume-panel .btn{width:100%;white-space:normal}
 }
+
+
+/* V3: focused insurance depth and built-app showcase; no framework or JS changes. */
+.skill-next-link{display:inline-flex;align-items:center;margin-top:15px;color:var(--blue);font-size:12px;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+.insurance-depth-section{background:#fff}
+.insurance-story-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.insurance-story{padding:29px 27px 28px;border:1px solid #dae7ef;background:linear-gradient(155deg,#f7fbfe,#eaf2f7);border-radius:17px;box-shadow:0 14px 35px #1038530a}
+.insurance-story-header{display:flex;align-items:center;justify-content:space-between;gap:18px;color:var(--green-deep);font-size:10px;letter-spacing:.12em;font-weight:850;margin-bottom:24px}
+.insurance-story-header>span:first-child{font-size:25px;color:var(--blue);letter-spacing:-.04em}
+.insurance-story h3{font-size:23px;line-height:1.19;letter-spacing:-.035em;margin-bottom:18px}
+.insurance-story>p{font-size:13px;line-height:1.8;color:var(--slate);margin:0 0 24px}
+.insurance-chips{display:flex;gap:7px;flex-wrap:wrap}
+.insurance-chips span{font-size:10.5px;color:#265673;font-weight:720;padding:8px 9px;border:1px solid #d0e1eb;border-radius:6px;background:#fff}
+.architecture-panel{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.85fr);gap:36px;margin-top:22px;padding:33px 34px;background:linear-gradient(110deg,#0e2e49,#173e5b);color:#f4f8fc;border-radius:18px}
+.architecture-mark{font-size:10px;letter-spacing:.17em;color:#a2ddb0;font-weight:850}
+.architecture-intro h3{font-size:24px;line-height:1.23;margin:15px 0 13px}
+.architecture-intro p{font-size:12px;color:#c3d8e6;line-height:1.8;margin:0}
+.architecture-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.architecture-columns>div{padding:8px 0 2px 16px;border-left:2px solid #87c9a3}
+.architecture-columns h4{font-size:13px;line-height:1.3;margin:0 0 12px;color:#f2f8fc}
+.architecture-columns p{font-size:11.5px;line-height:1.73;color:#d4e4ed;margin:0}
+.built-apps-section{background:radial-gradient(ellipse 65% 70% at 95% 10%,#22516a55,transparent 70%),linear-gradient(130deg,#081c30,#0d2c46);color:#fff}
+.built-apps-section .section-heading h2 em{color:var(--green)}
+.built-apps-section .section-heading>p{color:#c4d9e5}
+.built-apps-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.built-app-card{min-width:0;display:flex;flex-direction:column;overflow:hidden;background:#12334e;border:1px solid #769db84d;border-radius:19px;box-shadow:0 25px 45px #00000024;transition:transform .4s var(--ease),box-shadow .4s}
+.built-app-card:hover{transform:translateY(-6px);box-shadow:0 32px 62px #00000042}
+.app-preview{margin:23px 24px 0;background:#f1f7fb;border:1px solid #e1edf4;border-radius:11px 11px 0 0;min-height:196px;color:#163550;overflow:hidden;box-shadow:0 10px 22px #00000035}
+.app-preview-bar{height:41px;display:flex;align-items:center;gap:9px;padding:0 15px;font-size:10px;letter-spacing:.12em;font-weight:850;color:#2a526e;background:#e3eef4;border-bottom:1px solid #c8dbe8}
+.app-preview-logo{height:23px;width:23px;background:#2b70a3;color:white;border-radius:6px;display:grid;place-items:center;font-size:14px;letter-spacing:0}
+.app-preview-dot{width:7px;height:7px;border-radius:50%;background:#4da16d;margin-left:auto;box-shadow:0 0 0 3px #4da16d20}
+.app-preview-content{padding:12px 14px}
+.app-preview-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.app-preview-tabs span{font-size:9px;padding:6px 8px;border:1px solid #d6e4ed;border-radius:5px;background:#fff;color:#507087;font-weight:700}
+.app-preview-tabs .selected{background:#2b6f9f;border-color:#2b6f9f;color:white}
+.app-preview-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.app-preview-summary>span{display:flex;flex-direction:column;gap:7px;min-height:60px;background:white;border:1px solid #ddeaf1;border-radius:6px;padding:10px 8px}
+.app-preview-summary strong,.study-preview-row strong{font-size:8px;letter-spacing:.08em;color:#436882}
+.app-preview-summary i,.app-preview-lines i,.study-preview-row i{display:block;height:5px;background:#d8e6ef;border-radius:5px}
+.app-preview-summary i:last-child{width:65%}
+.app-preview-lines{display:flex;flex-direction:column;gap:5px;margin:12px 0 2px}
+.app-preview-lines i{height:5px}
+.app-preview-lines i:nth-child(2){width:77%}.app-preview-lines i:nth-child(3){width:54%}
+.app-preview-study .app-preview-logo{background:#469569}
+.app-preview-study .app-preview-tabs .selected{background:#40835e;border-color:#40835e}
+.study-preview-row{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #dce9f0;border-radius:7px;padding:11px;margin-bottom:10px}
+.study-preview-ring{width:38px;height:38px;flex:0 0 38px;border-radius:50%;border:6px solid #72bb84;border-left-color:#d4e9d9;transform:rotate(-30deg)}
+.study-preview-row>span:last-child{flex:1;display:grid;gap:5px}
+.study-preview-row i{width:90%}.study-preview-row i:last-child{width:55%}
+.built-app-body{padding:27px 27px 29px;display:flex;flex-direction:column;flex:1}
+.built-app-kicker{display:flex;gap:13px;justify-content:space-between;align-items:center;flex-wrap:wrap;color:#a4d8b3;font-weight:850;font-size:10px;letter-spacing:.12em}
+.app-kind{letter-spacing:0;color:#c6dbe9;border:1px solid #98bfd344;background:#ffffff0c;padding:7px 9px;border-radius:5px}
+.built-app-body h3{font-size:28px;letter-spacing:-.04em;margin:19px 0 15px}
+.built-app-body>p{color:#c7dbe9;font-size:13px;line-height:1.77}
+.app-capabilities{margin:11px 0 22px;padding-left:18px;display:grid;gap:9px}
+.app-capabilities li{font-size:12.5px;line-height:1.62;color:#dfebf3}
+.app-capabilities li::marker{color:#a5dba9}
+.app-tech{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+.app-tech span{font-size:10.5px;font-weight:760;padding:8px 10px;border-radius:5px;border:1px solid #87b7d15e;color:#e1f0f6;background:#ffffff0d}
+.built-app-body .app-disclosure{font-size:11px;margin:22px 0 0;color:#a9c7d9;border-top:1px solid #719ab245;padding-top:14px}
+.apps-takeaway{display:flex;gap:21px;align-items:center;margin-top:30px;padding:24px 27px;border:1px solid #94bba044;border-radius:13px;background:#ffffff0a}
+.apps-takeaway-accent{flex:0 0 4px;width:4px;height:54px;border-radius:5px;background:var(--green)}
+.apps-takeaway p{margin:0;color:#cbdfe9;font-size:13px;line-height:1.75}
+.apps-takeaway strong{color:#fff}
+@media(max-width:1050px){
+  .insurance-story-grid{grid-template-columns:1fr 1fr}
+  .architecture-panel{grid-template-columns:1fr;gap:23px}
+  .built-apps-grid{gap:15px}
+}
+@media(max-width:800px){
+  .insurance-story-grid{grid-template-columns:1fr}
+  .architecture-columns{gap:12px}
+  .built-apps-grid{grid-template-columns:1fr}
+  .built-app-card{max-width:660px}
+}
+@media(max-width:580px){
+  .insurance-story{padding:24px 22px}
+  .insurance-story h3{font-size:21px}
+  .architecture-panel{padding:26px 23px}
+  .architecture-columns{grid-template-columns:1fr;gap:16px}
+  .architecture-columns>div{padding-left:15px}
+  .app-preview{margin:17px 16px 0}
+  .built-app-body{padding:24px 21px}
+  .built-app-body h3{font-size:24px}
+  .built-app-kicker{font-size:9px}
+  .apps-takeaway{padding:20px 18px;gap:14px}
+  .apps-takeaway-accent{height:85px}
+}
