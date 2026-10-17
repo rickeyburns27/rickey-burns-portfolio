@@ -45,3 +45,13 @@ Find and verify the latest actual designed portfolio and case study—including 
 - Direction: lead with cross-industry Enterprise Transformation & Strategic Operations, retain insurance M&A and integration as evidence, preserve exact employment history and approved metrics. Never add Keystone as employment or name it as employer.
 - **No website source changes, merges, deployments or pull requests are approved or made by this documentation update.** Codex should use the user's approved preview as source if accessible, verify it matches hash above, and propose a targeted TWO-FILE wording-only patch for approval. If preview artifact cannot be accessed, ask for it rather than fabricating the approved copy.
 - Next task is **the case study**. User says prior chat built a newer case study before failing; actual latest draft is currently UNVERIFIED. Do NOT assume the repository's V3 PDF is the newer work. Get the actual document/artifact before editing it; preserve design, ask only for essential missing source.
+
+
+## 2026-10-17 — CASE STUDY ACTUAL DRAFT LOCATED
+- User uploaded `Rickey_Burns_Cross_Industry_Case_Study_PREVIEW(1).pdf` and explicitly identified it as the latest case-study draft built in the previous chat. THIS is the source for continued case-study review, not the older V3 PDF in the repository.
+- PDF identity: SHA-256 `2b3ad82cca452a8011cc72dc84e07c3670e350cc333131514dc134f2c8eb6e1a`; 1 page, 576 x 864 pts, 1,853,437 bytes.
+- Key design: hero/headshot with "Enterprise Transformation & Strategic Operations"; impact tiles 25 initiatives, $60M+ portfolio, 50% shorter cycle, 100+ organizations, 1,000+ employees, 100% completed; four-stage career journey; process improvement; six-, five-, and three-site example cards; core value row and closing.
+- This PDF is an **existing draft**, not yet newly edited, approved for publication, or merged. Preserve its graphic layout and imagery unless user requests a change.
+- File is conversation-local; future sessions must locate actual uploaded PDF and verify hash before editing. Do not tell user V3 is latest.
+- Accuracy checkpoint: its tile reads "$60M+ PORTFOLIO INVESTMENT", while AGENTS.md currently locks "$60M in annual revenue across these 25 integrations". Do not silently reconcile; flag for user when reviewing factual wording.
+- No portfolio website source code or case study file changed as part of this documentation update.
