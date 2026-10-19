@@ -1,6 +1,20 @@
 # Career Portfolio — Recovery Checkpoint
 Updated: 2026-10-17
 
+## 2026-10-18 — Cross-industry baseline integrated for review
+
+- Explicit owner request supersedes earlier wording-only/no-publication limits for this task: use the supplied ZIP, polish its case study, open a PR, and deploy a Cloudflare Pages preview. Production still requires explicit approval.
+- Actual source: `Rickey_Burns_Cross_Industry_Site_AND_Case_Study_PREVIEW.zip`, SHA-256 `1423a51fce15fa850e4d5c65017485eac3cb843932521aa0dbe044d1a052b8bf`.
+- Branch: `feature/cross-industry-portfolio-case-study`. Implementation commit: `c76866e576b5e597e8cc015b439bb0296300a052`. Review: https://github.com/rickeyburns27/rickey-burns-portfolio/pull/6 .
+- Verified implementation preview: https://a176e151.rickey-burns-portfolio.pages.dev/ . Cloudflare identifies it as Preview for the implementation commit. Production remains on `main` at `5f5f5111afa88c21a7a7c5f674345dcee6c696e5`.
+- Website `index.html` and `assets/js/content.js` match the supplied baseline exactly. Existing CSS/behavior match the ZIP after newline normalization. Portrait and three example photographs are byte-identical to the ZIP. No employment-history edits.
+- New files: `assets/docs/case-study-source.html`, `assets/docs/Rickey_Burns_Enterprise_Transformation_Case_Study.pdf`, and `assets/images/mountain-road-case-study.png`. Updated preview: `assets/images/case-study-poster.webp`. README includes editable-source export instructions; `scripts/verify.py` checks the new assets and arrow counts.
+- Case-study polish: shared navy/blue/green palette, typography, card alignment, spacing, and page composition. Native editable HTML/CSS, native PDF text, one Letter-size page (612 x 792 points), six blue arrows and three green arrows.
+- Accuracy corrections limited to case-study tiles: 25 integrations completed, $60M annual revenue across those integrations, and 100% committed milestones completed. The ZIP's portfolio-scope and initiative-completion labels were inconsistent with verified facts. Website wording is preserved.
+- Completed: required smoke and JS syntax checks; diff whitespace check; 1440px and 390px browser review; desktop anchors; mobile Enter/Escape/link-close behavior; back-to-top; career disclosure expansion; all five website images loaded; no horizontal overflow or browser console errors observed. PDF visually inspected through Poppler. Browser downloads from local preview and staging match the generated PDF SHA-256 `6967b906165a325b5ca90bade541594f4e4e716e004771122dc487a5894f1014`.
+- A separate command-line HTTP audit of staging returned 403; browser access and the real staging download succeeded. Do not describe that optional HTTP audit as passed.
+- Remaining: owner review/approval. No merge or production deployment authorized or performed.
+
 ## Purpose
 Start new portfolio work by reading this checkpoint and AGENTS.md, then verifying the actual repo/branch/PR and latest available user-approved drafts. This is a checkpoint, not a claim that the latest design was recovered.
 

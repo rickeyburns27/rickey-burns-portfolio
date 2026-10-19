@@ -19,7 +19,9 @@ for asset in [
     'assets/images/rickey-burns.webp', 'assets/images/six-site.webp',
     'assets/images/five-site.webp', 'assets/images/new-york.webp',
     'assets/images/case-study-poster.webp', 'assets/images/favicon.svg',
-    'assets/docs/Rickey_Burns_Integration_Leadership_Case_Study_V3.pdf',
+    'assets/docs/Rickey_Burns_Enterprise_Transformation_Case_Study.pdf',
+    'assets/docs/case-study-source.html',
+    'assets/images/mountain-road-case-study.png',
 ]:
     expect((root / asset).is_file(), f'missing asset {asset}')
 for section in ['impact', 'journey', 'approach', 'experience', 'strengths', 'contact']:
@@ -39,6 +41,12 @@ expect('rickeyburns27@gmail.com' in content, 'email contact not configured')
 for x in re.findall(r'(?:href|src)="(assets/[^"#]+)"', html):
     expect((root / x).is_file(), f'broken internal link {x}')
 expect('<!-- PLACEHOLDER' not in html, 'placeholder in public website')
+case_source = (root / 'assets/docs/case-study-source.html').read_text(encoding='utf-8')
+arrow_rows = re.findall(r'<div class="arrowline(?: green)?"[^>]*>(.*?)</div></div>', case_source)
+expect([row.count('class="arrow"') for row in arrow_rows] == [6, 3],
+       'case study must have six blue arrows and three green arrows')
+expect('Annual revenue' in case_source and 'Committed milestones completed' in case_source,
+       'case study must retain verified revenue and milestone wording')
 if errors:
     print('FAILED:')
     for error in errors:
