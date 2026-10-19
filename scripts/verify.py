@@ -47,7 +47,7 @@ case_source = (root / 'assets/docs/case-study-source.html').read_text(encoding='
 arrow_rows = re.findall(r'<div class="arrowline(?: green)?"[^>]*>(.*?)</div></div>', case_source)
 expect([row.count('class="arrow"') for row in arrow_rows] == [6, 3],
        'case study must have six blue arrows and three green arrows')
-expect('Enterprise portfolio' in case_source and 'Committed milestones completed' in case_source,
+expect('Enterprise portfolio' in case_source and 'Completion of committed milestones' in case_source,
        'case study must retain verified revenue and milestone wording')
 resume_source = (root / 'assets/docs/resume-source.html').read_text(encoding='utf-8')
 for name, text in [('website', html + content), ('case study', case_source), ('resume', resume_source)]:
@@ -55,6 +55,9 @@ for name, text in [('website', html + content), ('case study', case_source), ('r
     expect('keystone' not in text.lower(), f'unapproved employer in {name}')
     expect('20 months' in text and 'enterprise portfolio' in text.lower(), f'portfolio wording missing in {name}')
 expect(html.count('assets/docs/Rickey_Burns_Executive_Resume.pdf') == 3, 'resume download links missing')
+expect(case_source.count('class="paper"') == 2, 'impact brief must define exactly two pages')
+expect('2 PAGES' in html and 'one-page' not in html.lower(), 'outdated case-study page count')
+expect('id="icon-network"' in html and "icon: 'network'" in content, 'systems network icon missing')
 if errors:
     print('FAILED:')
     for error in errors:

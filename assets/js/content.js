@@ -21,7 +21,7 @@ window.PORTFOLIO_CONTENT = {
   ],
   principles: [
     { title: 'People first', detail: 'Keep teams informed, prepared, and productive.', icon: 'people' },
-    { title: 'Systems aligned', detail: 'Unify technology, data, and processes with minimal disruption.', icon: 'gear' },
+    { title: 'Systems aligned', detail: 'Unify technology, data, and processes with minimal disruption.', icon: 'network' },
     { title: 'Practical improvement', detail: 'Build repeatable playbooks that reduce time and complexity.', icon: 'bars' },
     { title: 'Accountable delivery', detail: 'Own the commitments and finish what was promised.', icon: 'shield' },
     { title: 'Business continuity', detail: 'Keep operations moving while building long-term value.', icon: 'building' }

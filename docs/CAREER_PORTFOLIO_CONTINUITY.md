@@ -1,6 +1,17 @@
 # Career Portfolio — Recovery Checkpoint
 Updated: 2026-10-18
 
+## 2026-10-18 — Executive Impact Brief redesign and network icon
+
+- Owner authorized expanding the case-study download to two pages and updating existing PR #7 on `feature/branded-executive-downloads`. No general website redesign, merge, or production deployment authorized.
+- The former one-page case study is now the two-page Executive Impact Brief. Editable source and stable PDF filename remain `assets/docs/case-study-source.html` and `assets/docs/Rickey_Burns_Enterprise_Transformation_Case_Study.pdf`. Poster shows the new page 1; website copy, alt/ARIA labels, page-count badge, README and repository verification reflect two pages.
+- Page 1: cinematic mountain-road hero, one focal 50% result, $60M+ enterprise portfolio and 25-of-25 completion, six-month-to-three-month visual comparison, and 100% completion of committed milestones. Exactly six blue and three green arrows.
+- Page 2: six-site, five-site/~50-employee and three-location NYC examples presented as challenge, leadership action and demonstrated result. Career-scale evidence and executive governance closing add proof without repeating page 1.
+- Added `icon-network` to the existing SVG symbol system; only the Systems aligned principle uses it. Shared `icon-gear` preserved unchanged. Website CSS, motion, images, approved resume PDF/HTML and cleaned ATS text unchanged.
+- Final PDF rendered and visually inspected at normal reading scale, with thumbnail/mobile-width checks. Two native-text Letter pages; no clipping/overlap; photo treatment and hierarchy clearly differ from the previous single-page version. Staging/download verification is recorded in PR #7 when complete.
+- Approved resume PDF hash remains `b4b4396c5c9b31144bc5e1b8c5930d955d182973ead975b7cc9b53c8d58a0fa2`.
+
+
 ## 2026-10-18 — Coordinated branded downloads ready for review
 
 - Baseline: current main at `ba623d2da101cecc636f918445b1bc4195fc28b0` (PR #6 was already merged before this task). New branch: `feature/branded-executive-downloads`; implementation commit `a1934088248adfeb52eef96589b867186b3011c4`; new PR https://github.com/rickeyburns27/rickey-burns-portfolio/pull/7 .
