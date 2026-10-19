@@ -24,7 +24,7 @@ Then visit `http://localhost:8000`.
 | Counter, timeline, reveal effects, mobile navigation | `assets/js/main.js` |
 | Portrait or office imagery | `assets/images/` (keep file names or update content.js) |
 | Case study PDF | `assets/docs/` |
-| Editable one-page case study | `assets/docs/case-study-source.html` |
+| Editable two-page Executive Impact Brief | `assets/docs/case-study-source.html` |
 
 Colors and spacing are centralized in CSS custom properties (`:root`). The text and repeated components are data driven by `content.js` so content feedback does not require page rebuilds.
 
@@ -40,7 +40,7 @@ The smoke test validates assets, sections, local links, the primary metrics, and
 
 ## Export the editable case study
 
-Open `assets/docs/case-study-source.html` in Chrome or Edge, edit its native HTML/CSS in a text editor, then print to PDF: Letter, portrait, scale 100%, margins None, background graphics enabled, headers and footers disabled. The source defines a single 8.5 × 11 inch page. Save as `assets/docs/Rickey_Burns_Enterprise_Transformation_Case_Study.pdf` and update the matching `assets/images/case-study-poster.webp` when the design changes. Keep the six blue and three green arrows and verified metric wording. Text remains selectable in the exported PDF.
+Open `assets/docs/case-study-source.html` in Chrome or Edge, edit its native HTML/CSS in a text editor, then print to PDF: Letter, portrait, scale 100%, margins None, background graphics enabled, headers and footers disabled. The source defines two 8.5 × 11 inch pages with explicit page breaks. Save as `assets/docs/Rickey_Burns_Enterprise_Transformation_Case_Study.pdf` and update the matching `assets/images/case-study-poster.webp` when the design changes. Keep the six blue and three green arrows and verified metric wording. Text remains selectable in the exported PDF.
 
 ## Deploy (free static hosting)
 
@@ -65,3 +65,17 @@ This is v1 for iterative review. Future edits should be patches to existing sect
 ## GitHub and Codex editing
 
 Start with [`GITHUB_SETUP.md`](GITHUB_SETUP.md). The proposed small-change edit queue is in [`CODEX_PLAN.md`](CODEX_PLAN.md), and Codex should obey [`AGENTS.md`](AGENTS.md). No build tool required.
+
+## Coordinated branded downloads
+
+The live download set is `assets/docs/Rickey_Burns_Enterprise_Transformation_Case_Study.pdf` (two Letter pages) and `assets/docs/Rickey_Burns_Executive_Resume.pdf` (two Letter pages). Editable HTML/CSS sources are `case-study-source.html` and `resume-source.html` in the same directory. A linear recruiter-friendly companion is `Rickey_Burns_Resume_ATS.txt`.
+
+Export either HTML source in Chrome/Edge with Letter paper, portrait, scale 100%, no margins, background graphics on, and browser headers/footers off. Both sources have explicit page breaks. Keep text native; do not flatten pages into images. Re-render and inspect every page after edits. Refresh the case-study poster from the final source after case-study changes.
+
+Source resume supplied for this work: `Rickey_Burns_Cross_Resume_2.docx` (owner-attached Desktop file; SHA-256 `2b9a0822b5c3856f11bb9a54b4fde1a8b25bcc45a59fdcab7b3f8f667f03e669`). The request called it `Rickey_Burns_Cross_Resume_2(3).docx`; the attached file is the actual content source. Explicit owner metric standards supersede its investment and on-time claims: $60M+ enterprise portfolio; 25 simultaneous initiatives; all 25 completed in 20 months; 50% shorter delivery cycle; 100+ organizations; 1,000+ employees supported; completion of committed initiatives/milestones. The education typo is normalized to Expected 2028.
+
+## Executive Impact Brief
+
+The case-study download is now a two-page Executive Impact Brief. Page 1 stands alone with the cinematic mountain-road opening, signature results, six-blue/three-green-arrow comparison and milestone completion. Page 2 adds three challenge/action/result examples and operational leadership evidence. The stable PDF filename is retained so existing downloads continue to work. The website poster shows page 1 and labels the download as two pages.
+
+Systems aligned uses the scoped `icon-network` symbol. Keep `icon-gear` unchanged for other components. The approved executive resume PDF, its editable source, and the cleaned ATS text are unchanged by this redesign.

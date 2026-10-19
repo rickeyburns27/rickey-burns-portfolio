@@ -170,3 +170,6 @@ h2 em,h1 em{font-style:normal;color:var(--blue)}
 .back-to-top:hover{background:#16405d;transform:translateY(-3px)}
 .back-to-top>span:first-child{font-size:20px;line-height:1}
 @media(prefers-reduced-motion:reduce){.back-to-top:hover{transform:none}}
+
+/* Companion branded downloads */
+.portfolio-copy > .btn { margin: 0 10px 12px 0; }
