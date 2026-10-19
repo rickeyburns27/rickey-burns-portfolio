@@ -1,6 +1,15 @@
 # Career Portfolio — Recovery Checkpoint
 Updated: 2026-10-19
 
+## 2026-10-19 — Correct PDF photograph target, PR #8
+
+- Owner clarified that the blurry-photo fix targets the two-page Executive Impact Brief PDF, not the website gallery. On the existing feature/cinematic-executive-journey branch, changed ONLY the three page-two image references in assets/docs/case-study-source.html to six-site-2160.webp, five-site-2160.webp and new-york-2160.webp, then exported the stable PDF filename using Chrome with native/tagged text, Letter size, background graphics and no browser headers/footers.
+- Rendered both before/after PDFs with Poppler at 250 DPI (2125×2750). Visually inspected both complete pages, the page-one hero/portrait close-up and all three page-two photo comparisons at native crop resolution. Sharper roof/window edges and skyline detail visibly correct the old softness; framing follows the prepared higher-resolution sources. No image enlargement or generated detail.
+- Page one is pixel-identical before/after at 250 DPI; the portrait was already sharp and the cinematic backdrop was retained. Poster therefore remains unchanged. Page two is pixel-identical outside the three photo panels. Both pages retain identical native extracted text AND character positions (932 / 1476 characters); two pages, six blue/three green arrows, all styling and content preserved.
+- Website HTML/CSS/JS, gallery assets, executive resume PDF/source and all other document assets are unchanged by this correction. Existing repository verification, both JavaScript syntax checks and whitespace checks pass.
+- New brief SHA-256: 99387b99659cd648666500569b09d1a513af8080e3169ae19c40b633a14c5b38. Final actual Cloudflare download hash and deployment URL recorded in PR #8 after deployment. Local user-facing before/after comparisons and 250-DPI page renders are saved in outputs/impact-brief-photo-review of this chat workspace.
+- Review only; no main push, merge or production deployment authorized.
+
 ## 2026-10-19 — PR #8 targeted content and photograph enhancement
 
 - Owner approved the overall Cinematic Journey design and requested targeted content/image improvements on the existing feature/cinematic-executive-journey branch only. No redesign, main push, merge or production deployment authorized.
