@@ -31,3 +31,10 @@ window.PORTFOLIO_CONTENT = {
     email: 'rickeyburns27@gmail.com'
   }
 };
+
+/* Evidence already approved in the Executive Impact Brief; used by native disclosures. */
+window.PORTFOLIO_CASE_PROOF = [
+  { action: 'Aligned technology, teams, and stakeholders through one delivery plan across six locations.', result: 'Completed all committed milestones.' },
+  { action: 'Coordinated technology, data, and user readiness across five operating locations.', result: 'Maintained business continuity throughout the transition.' },
+  { action: 'Led the multi-site transition, coordinating cross-site logistics and stakeholder needs.', result: 'Completed all committed milestones.' }
+];

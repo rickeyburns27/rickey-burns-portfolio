@@ -1,6 +1,13 @@
 # Career Portfolio — Recovery Checkpoint
-Updated: 2026-10-18
+Updated: 2026-10-19
 
+## 2026-10-19 — Cinematic Journey review branch
+
+- Owner explicitly approved a substantial Cinematic Journey website redesign with premium executive typography. This supersedes older no-redesign guidance for this task only. Baseline: main c800092. Branch: feature/cinematic-executive-journey. Review only: no merge or production approval.
+- New full-photo opening uses an optimized WebP derived from the existing mountain-road photograph; originals retained. Immediate 50% delivery outcome, editorial metrics, reordered process/case/career story, alternating photographic cases, native expandable evidence and technical detail, current-chapter navigation, replayable comparison, responsive layout and reduced-motion safeguards. No framework, CDN, font download or build dependency added.
+- Presentation overrides: assets/css/cinematic.css, loaded after the existing stylesheets. Existing content data retained; three case evidence pairs reuse approved brief facts. All employment history and approved wording retained. All existing documents and original photos unchanged, including both PDFs and their editable HTML sources.
+- Local browser checks: 390x844 mobile, 768x1024 tablet, 1440x1000 desktop; navigation, mobile menu close, case evidence expansion, process replay/live announcement, image loading and horizontal overflow. Six blue and three green process arrows retained. Repository verification, JavaScript syntax and whitespace checks pass. Reduced-motion CSS/JS paths reviewed; browser was in normal-motion mode.
+- Cloudflare preview and PR details are recorded below after deployment. Future changes must preserve the owner's approval boundary and the original document bytes.
 ## 2026-10-18 — Executive Impact Brief redesign and network icon
 
 - Implementation commit `22f24d8`; verified preview https://e2576b47.rickey-burns-portfolio.pages.dev/ . Both actual staging downloads match repository bytes; the brief is two pages and resume remains unchanged.

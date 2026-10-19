@@ -12,7 +12,18 @@
     if (text !== undefined) node.textContent = text;
     return node;
   };
-  const prefersReducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+  let prefersReducedMotion = motionPreference.matches;
+  document.documentElement.classList.toggle('motion-ready', !prefersReducedMotion);
+  motionPreference.addEventListener('change', event => {
+    prefersReducedMotion = event.matches;
+    document.documentElement.classList.toggle('motion-ready', !prefersReducedMotion);
+    if (prefersReducedMotion) {
+      qsa('[data-reveal]').forEach(node => node.classList.add('visible'));
+      document.documentElement.style.setProperty('--hero-drift', '0px');
+      qsa('.cycle-fill span').forEach(node => node.getAnimations().forEach(animation => animation.cancel()));
+    }
+  });
 
   function renderMetrics() {
     const wrap = qs('#metrics-grid');
@@ -72,6 +83,16 @@
       const tags = el('div', 'case-tags');
       entry.tags.forEach(tag => tags.append(el('span', '', tag)));
       body.append(tags);
+      const proof = window.PORTFOLIO_CASE_PROOF?.[index];
+      if (proof) {
+        const disclosure = el('details', 'case-proof');
+        const summary = el('summary', '', 'Leadership & outcome');
+        const description = el('dl');
+        description.append(el('dt', '', 'Leadership action'), el('dd', '', proof.action),
+          el('dt', '', 'Demonstrated result'), el('dd', '', proof.result));
+        disclosure.append(summary, description);
+        body.append(disclosure);
+      }
       card.append(figure, body);
       wrap.append(card);
     });
@@ -100,6 +121,7 @@
         const start = performance.now();
         const duration = 1150;
         const frame = time => {
+          if (prefersReducedMotion) { node.textContent = target.toLocaleString(); return; }
           const t = Math.min(1, (time - start) / duration);
           const eased = 1 - Math.pow(1 - t, 4);
           node.textContent = Math.round(target * eased).toLocaleString();
@@ -137,6 +159,8 @@
     let ticking = false;
     const update = () => {
       const distance = document.documentElement.scrollHeight - innerHeight;
+      const heroHeight = qs('.cinema-hero')?.offsetHeight || 0;
+      if (scrollY < heroHeight) document.documentElement.style.setProperty('--hero-drift', `${prefersReducedMotion || innerWidth < 801 ? 0 : Math.min(72, scrollY * .1)}px`);
       progress.style.transform = `scaleX(${distance > 0 ? Math.max(0, Math.min(1, scrollY / distance)) : 0})`;
       const box = timeline.getBoundingClientRect();
       const fraction = Math.max(0, Math.min(1, (innerHeight * .7 - box.top) / Math.max(1, box.height)));
@@ -161,8 +185,8 @@
     };
     toggle.addEventListener('click', () => setOpen(nav.hidden));
     qsa('a', nav).forEach(link => link.addEventListener('click', () => setOpen(false)));
-    addEventListener('keydown', event => { if (event.key === 'Escape') setOpen(false); });
-    addEventListener('resize', () => { if (innerWidth > 800) setOpen(false); });
+    addEventListener('keydown', event => { if (event.key === 'Escape' && !nav.hidden) { setOpen(false); toggle.focus(); } });
+    addEventListener('resize', () => { if (innerWidth > 1100) setOpen(false); });
   }
 
 
@@ -178,8 +202,42 @@
     qs('#email-link').href = `mailto:${data.contact.email}`;
   }
 
+  function initJourneyChapters() {
+    if (!('IntersectionObserver' in window)) return;
+    const links = qsa('.desktop-nav a, .mobile-nav a');
+    const sections = qsa('main section[id]');
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+      if (!current) return;
+      links.forEach(link => {
+        if (link.getAttribute('href') === `#${current.target.id}`) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    }, { rootMargin: '-15% 0px -55% 0px', threshold: 0 });
+    sections.forEach(section => observer.observe(section));
+  }
+
+  function initComparisonReplay() {
+    const button = qs('#replay-comparison');
+    const status = qs('#comparison-status');
+    if (!button || !status) return;
+    button.addEventListener('click', () => {
+      const before = qsa('.cycle-before .cycle-fill span');
+      const after = qsa('.cycle-after .cycle-fill span');
+      [...before, ...after].forEach(node => node.getAnimations().forEach(animation => animation.cancel()));
+      status.textContent = '';
+      if (!prefersReducedMotion) {
+        [before, after].forEach((row, rowIndex) => row.forEach((node, index) => {
+          if (node.animate) node.animate([{ opacity: .35, transform: 'translateY(4px)' }, { opacity: 1, transform: 'translateY(0)' }],
+            { duration: 420, delay: rowIndex * 550 + index * 65, easing: 'ease-out', fill: 'backwards' });
+        }));
+      }
+      requestAnimationFrame(() => { status.textContent = 'Delivery cycle reduced from six months to three months: 50% shorter.'; });
+    });
+  }
+
   renderMetrics(); renderCareer(); renderCases(); renderPrinciples();
   initContactLinks(); initMobileNav(); initBackToTop(); initReveals();
   animateCounters(qsa('.metric-digits'));
-  initProgressAndTimeline();
+  initProgressAndTimeline(); initJourneyChapters(); initComparisonReplay();
 })();
