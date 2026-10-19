@@ -21,6 +21,8 @@ for asset in [
     'assets/images/case-study-poster.webp', 'assets/images/favicon.svg',
     'assets/docs/Rickey_Burns_Enterprise_Transformation_Case_Study.pdf',
     'assets/docs/case-study-source.html',
+    'assets/docs/resume-source.html',
+    'assets/docs/Rickey_Burns_Executive_Resume.pdf',
     'assets/images/mountain-road-case-study.png',
 ]:
     expect((root / asset).is_file(), f'missing asset {asset}')
@@ -45,8 +47,14 @@ case_source = (root / 'assets/docs/case-study-source.html').read_text(encoding='
 arrow_rows = re.findall(r'<div class="arrowline(?: green)?"[^>]*>(.*?)</div></div>', case_source)
 expect([row.count('class="arrow"') for row in arrow_rows] == [6, 3],
        'case study must have six blue arrows and three green arrows')
-expect('Annual revenue' in case_source and 'Committed milestones completed' in case_source,
+expect('Enterprise portfolio' in case_source and 'Committed milestones completed' in case_source,
        'case study must retain verified revenue and milestone wording')
+resume_source = (root / 'assets/docs/resume-source.html').read_text(encoding='utf-8')
+for name, text in [('website', html + content), ('case study', case_source), ('resume', resume_source)]:
+    expect('annual revenue' not in text.lower() and 'investment' not in text.lower(), f'conflicting portfolio wording in {name}')
+    expect('keystone' not in text.lower(), f'unapproved employer in {name}')
+    expect('20 months' in text and 'enterprise portfolio' in text.lower(), f'portfolio wording missing in {name}')
+expect(html.count('assets/docs/Rickey_Burns_Executive_Resume.pdf') == 3, 'resume download links missing')
 if errors:
     print('FAILED:')
     for error in errors:

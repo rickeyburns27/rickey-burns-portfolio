@@ -13,14 +13,14 @@ Maintain the approved V3-inspired single-page site, preserving user-verified wor
 7. Report changed files, what changed, what was tested, and any blocker. No unsolicited redesigns or dependency installs.
 
 ## Locked content / accuracy
-- 25 integrations completed in 20 months.
-- $60M in annual revenue across these 25 integrations (wording approved in V3).
+- 25 simultaneous initiatives; all 25 completed in 20 months.
+- $60M+ enterprise portfolio (owner-standardized wording, 2026-10-18). Do not describe it as annual revenue or investment.
 - Integration playbook reduced from six to three months (50% cycle reduction).
 - 100+ acquired organizations supported across career.
-- 1,000+ employees impacted.
+- 1,000+ employees supported.
 - 100% of **committed milestones completed**; do NOT change to 100% on time.
 - Career: Field Integration → Systems Engineering → Application & Data Migration PM → Accountable Integration Leader.
-- Independent examples: six sites; five sites/~50 employees; three sites across NYC/$20M annual revenue.
+- Independent examples: six sites; five sites/~50 employees; three sites across NYC.
 - No identifying acquired agency or HUB office photos/addresses/names. No visible image disclaimer.
 - The user's headshot and V3 case study graphic are owner supplied; preserve them.
 

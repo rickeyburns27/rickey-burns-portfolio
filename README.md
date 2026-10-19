@@ -65,3 +65,11 @@ This is v1 for iterative review. Future edits should be patches to existing sect
 ## GitHub and Codex editing
 
 Start with [`GITHUB_SETUP.md`](GITHUB_SETUP.md). The proposed small-change edit queue is in [`CODEX_PLAN.md`](CODEX_PLAN.md), and Codex should obey [`AGENTS.md`](AGENTS.md). No build tool required.
+
+## Coordinated branded downloads
+
+The live download set is `assets/docs/Rickey_Burns_Enterprise_Transformation_Case_Study.pdf` (one Letter page) and `assets/docs/Rickey_Burns_Executive_Resume.pdf` (two Letter pages). Editable HTML/CSS sources are `case-study-source.html` and `resume-source.html` in the same directory. A linear recruiter-friendly companion is `Rickey_Burns_Resume_ATS.txt`.
+
+Export either HTML source in Chrome/Edge with Letter paper, portrait, scale 100%, no margins, background graphics on, and browser headers/footers off. The resume source has explicit page breaks. Keep text native; do not flatten pages into images. Re-render and inspect every page after edits. Refresh the case-study poster from the final source after case-study changes.
+
+Source resume supplied for this work: `Rickey_Burns_Cross_Resume_2.docx` (owner-attached Desktop file; SHA-256 `2b9a0822b5c3856f11bb9a54b4fde1a8b25bcc45a59fdcab7b3f8f667f03e669`). The request called it `Rickey_Burns_Cross_Resume_2(3).docx`; the attached file is the actual content source. Explicit owner metric standards supersede its investment and on-time claims: $60M+ enterprise portfolio; 25 simultaneous initiatives; all 25 completed in 20 months; 50% shorter delivery cycle; 100+ organizations; 1,000+ employees supported; completion of committed initiatives/milestones. The education typo is normalized to Expected 2028.
