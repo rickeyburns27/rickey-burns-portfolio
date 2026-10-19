@@ -1,5 +1,19 @@
 # Career Portfolio — Recovery Checkpoint
-Updated: 2026-10-17
+Updated: 2026-10-18
+
+## 2026-10-18 — Coordinated branded downloads ready for review
+
+- Baseline: current main at `ba623d2da101cecc636f918445b1bc4195fc28b0` (PR #6 was already merged before this task). New branch: `feature/branded-executive-downloads`; implementation commit `a1934088248adfeb52eef96589b867186b3011c4`; new PR https://github.com/rickeyburns27/rickey-burns-portfolio/pull/7 .
+- Verified Cloudflare Preview: https://41c293a4.rickey-burns-portfolio.pages.dev/ . Production remains on the main baseline; this task did not merge or deploy production.
+- Actual resume source: owner-attached `Rickey_Burns_Cross_Resume_2.docx` at the supplied Desktop path; SHA-256 `2b9a0822b5c3856f11bb9a54b4fde1a8b25bcc45a59fdcab7b3f8f667f03e669`. Request text calls it version 2(3), but the attachment has the shorter name. It was available and read; content was not reconstructed from memory.
+- Owner's new standards explicitly supersede older annual-revenue/investment and on-time wording: $60M+ enterprise portfolio; 25 simultaneous initiatives; all 25 completed in 20 months; 50% shorter delivery cycle; 100+ organizations; 1,000+ employees supported; completion of committed initiatives/milestones. Updated AGENTS accordingly. Resume employment titles/dates and other achievements follow the attachment; no Keystone references. Corrected the education typo to Expected 2028.
+- Outputs: `assets/docs/Rickey_Burns_Enterprise_Transformation_Case_Study.pdf` (one Letter page) and `assets/docs/Rickey_Burns_Executive_Resume.pdf` (two Letter pages). Editable sources: `assets/docs/case-study-source.html` and `assets/docs/resume-source.html`. Recruiter companion: `assets/docs/Rickey_Burns_Resume_ATS.txt`. README documents export settings and provenance.
+- Design: shared navy/blue/green palette, executive typography, clear hierarchy, generous resume spacing, photo-led case-study hero, coordinated impact cards and graphics. Case study retains six blue and three green arrows. Website photos and motion JavaScript unchanged; only download-button spacing added to CSS.
+- Site download links added in hero and case-study panel; existing resume request replaced with a direct PDF download. Standardized metric wording on site and both PDFs. Removed the NYC annual-revenue scope label to honor the explicit terminology restriction; three-location example retained.
+- Validation passed: repository smoke check, both JS syntax checks, whitespace check; native selectable PDF text, expected page counts and Letter size; all three final PDF pages visually inspected via Poppler, without clipping/overlap. Desktop 1440px and mobile 390px reviewed; desktop anchors, mobile Enter/Escape/link-close, back-to-top, all five images loaded, no horizontal overflow or console errors observed.
+- Actual browser downloads from staging match repository assets: case study SHA-256 `be644abc8f8940a10df6c4be2a1a785451fc569768ef717d680ee0cfe281adc1`; resume SHA-256 `b4b4396c5c9b31144bc5e1b8c5930d955d182973ead975b7cc9b53c8d58a0fa2`.
+- Remaining: owner review and explicit approval. No merge or production deployment authorized.
+
 
 ## 2026-10-18 — Cross-industry baseline integrated for review
 
