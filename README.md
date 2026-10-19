@@ -79,3 +79,7 @@ Source resume supplied for this work: `Rickey_Burns_Cross_Resume_2.docx` (owner-
 The case-study download is now a two-page Executive Impact Brief. Page 1 stands alone with the cinematic mountain-road opening, signature results, six-blue/three-green-arrow comparison and milestone completion. Page 2 adds three challenge/action/result examples and operational leadership evidence. The stable PDF filename is retained so existing downloads continue to work. The website poster shows page 1 and labels the download as two pages.
 
 Systems aligned uses the scoped `icon-network` symbol. Keep `icon-gear` unchanged for other components. The approved executive resume PDF, its editable source, and the cleaned ATS text are unchanged by this redesign.
+
+## Cinematic Journey preview
+
+The owner-authorized 2026-10-19 redesign is isolated on feature/cinematic-executive-journey. assets/css/cinematic.css holds the cinematic presentation overrides; existing stylesheets and all document sources remain intact. The optimized road WebP derives from the approved existing photograph. Native disclosures, chapter navigation and replay enhance the same vanilla site. See docs/CAREER_PORTFOLIO_CONTINUITY.md for the review checkpoint. Production requires explicit owner approval.

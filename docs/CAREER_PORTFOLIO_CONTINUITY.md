@@ -1,6 +1,30 @@
 # Career Portfolio — Recovery Checkpoint
-Updated: 2026-10-18
+Updated: 2026-10-19
 
+## 2026-10-19 — Correct PDF photograph target, PR #8
+
+- Owner clarified that the blurry-photo fix targets the two-page Executive Impact Brief PDF, not the website gallery. On the existing feature/cinematic-executive-journey branch, changed ONLY the three page-two image references in assets/docs/case-study-source.html to six-site-2160.webp, five-site-2160.webp and new-york-2160.webp, then exported the stable PDF filename using Chrome with native/tagged text, Letter size, background graphics and no browser headers/footers.
+- Rendered both before/after PDFs with Poppler at 250 DPI (2125×2750). Visually inspected both complete pages, the page-one hero/portrait close-up and all three page-two photo comparisons at native crop resolution. Sharper roof/window edges and skyline detail visibly correct the old softness; framing follows the prepared higher-resolution sources. No image enlargement or generated detail.
+- Page one is pixel-identical before/after at 250 DPI; the portrait was already sharp and the cinematic backdrop was retained. Poster therefore remains unchanged. Page two is pixel-identical outside the three photo panels. Both pages retain identical native extracted text AND character positions (932 / 1476 characters); two pages, six blue/three green arrows, all styling and content preserved.
+- Website HTML/CSS/JS, gallery assets, executive resume PDF/source and all other document assets are unchanged by this correction. Existing repository verification, both JavaScript syntax checks and whitespace checks pass.
+- New brief SHA-256: 99387b99659cd648666500569b09d1a513af8080e3169ae19c40b633a14c5b38. Final actual Cloudflare download hash and deployment URL recorded in PR #8 after deployment. Local user-facing before/after comparisons and 250-DPI page renders are saved in outputs/impact-brief-photo-review of this chat workspace.
+- Review only; no main push, merge or production deployment authorized.
+
+## 2026-10-19 — PR #8 targeted content and photograph enhancement
+
+- Owner approved the overall Cinematic Journey design and requested targeted content/image improvements on the existing feature/cinematic-executive-journey branch only. No redesign, main push, merge or production deployment authorized.
+- Three cases now have stronger headlines, visible business outcomes, and native expandable Challenge → My Leadership → Business Outcome evidence. Source: the owner's new firsthand message. Cross-functional team sizes are not direct reports; NYC ~$20M is agency business revenue associated with the engagement, separate from the $60M+ enterprise portfolio. No annual period, ROI, savings or avoided-downtime duration is inferred.
+- How I Lead connects principles to demonstrated actions. My Journey explains the four-stage progression. Hero/Impact and application framing are focused copy changes; detailed employment and application capabilities remain unchanged.
+- Recovered the SAME three approved photographic subjects from their README-documented Pexels originals. Added downsampled 720/1440/2160-wide WebPs with responsive srcset/sizes; preserved all legacy images, PDFs, editable sources, ATS and other document assets. Evidence mapping, native sizes, hashes and reproduction details: docs/CASE_STUDY_EVIDENCE.md.
+- Local review: 1440×1000 desktop, 768×1024 tablet and 390×844 mobile; native evidence expansion, keyboard menu/focus, responsive image loading, no horizontal overflow or image/text overlap. Original motion and reduced-motion logic retained. DPR is 1; high-density pixel coverage verified analytically, not on a physical 2×/3× device. Final preview validation is recorded in PR #8.
+
+## 2026-10-19 — Cinematic Journey review branch
+
+- Owner explicitly approved a substantial Cinematic Journey website redesign with premium executive typography. This supersedes older no-redesign guidance for this task only. Baseline: main c800092. Branch: feature/cinematic-executive-journey. Review only: no merge or production approval.
+- New full-photo opening uses an optimized WebP derived from the existing mountain-road photograph; originals retained. Immediate 50% delivery outcome, editorial metrics, reordered process/case/career story, alternating photographic cases, native expandable evidence and technical detail, current-chapter navigation, replayable comparison, responsive layout and reduced-motion safeguards. No framework, CDN, font download or build dependency added.
+- Presentation overrides: assets/css/cinematic.css, loaded after the existing stylesheets. Existing content data retained; three case evidence pairs reuse approved brief facts. All employment history and approved wording retained. All existing documents and original photos unchanged, including both PDFs and their editable HTML sources.
+- Local browser checks: 390x844 mobile, 768x1024 tablet, 1440x1000 desktop; navigation, mobile menu close, case evidence expansion, process replay/live announcement, image loading and horizontal overflow. Six blue and three green process arrows retained. Repository verification, JavaScript syntax and whitespace checks pass. Reduced-motion CSS/JS paths reviewed; browser was in normal-motion mode.
+- PR #8: https://github.com/rickeyburns27/rickey-burns-portfolio/pull/8 . Cloudflare successfully deployed implementation b9c63b6 at https://df1aa88d.rickey-burns-portfolio.pages.dev/ . Stable branch preview: https://feature-cinematic-executive.rickey-burns-portfolio.pages.dev/ . Staging browser checks also cover 320px width, keyboard Enter/Escape and focus return, six technical disciplines and all navigation anchors. Both actual downloaded PDFs have the same SHA-256 as main (brief 758d36ff025235e2e02715fe73fdab16da6354a04fc730edd52f7accef613c54; resume b4b4396c5c9b31144bc5e1b8c5930d955d182973ead975b7cc9b53c8d58a0fa2). No browser console errors. Future changes must preserve the owner's approval boundary and original document bytes.
 ## 2026-10-18 — Executive Impact Brief redesign and network icon
 
 - Implementation commit `22f24d8`; verified preview https://e2576b47.rickey-burns-portfolio.pages.dev/ . Both actual staging downloads match repository bytes; the brief is two pages and resume remains unchanged.
