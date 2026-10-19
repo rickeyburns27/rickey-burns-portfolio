@@ -1,6 +1,14 @@
 # Career Portfolio — Recovery Checkpoint
 Updated: 2026-10-19
 
+## 2026-10-19 — PR #8 targeted content and photograph enhancement
+
+- Owner approved the overall Cinematic Journey design and requested targeted content/image improvements on the existing feature/cinematic-executive-journey branch only. No redesign, main push, merge or production deployment authorized.
+- Three cases now have stronger headlines, visible business outcomes, and native expandable Challenge → My Leadership → Business Outcome evidence. Source: the owner's new firsthand message. Cross-functional team sizes are not direct reports; NYC ~$20M is agency business revenue associated with the engagement, separate from the $60M+ enterprise portfolio. No annual period, ROI, savings or avoided-downtime duration is inferred.
+- How I Lead connects principles to demonstrated actions. My Journey explains the four-stage progression. Hero/Impact and application framing are focused copy changes; detailed employment and application capabilities remain unchanged.
+- Recovered the SAME three approved photographic subjects from their README-documented Pexels originals. Added downsampled 720/1440/2160-wide WebPs with responsive srcset/sizes; preserved all legacy images, PDFs, editable sources, ATS and other document assets. Evidence mapping, native sizes, hashes and reproduction details: docs/CASE_STUDY_EVIDENCE.md.
+- Local review: 1440×1000 desktop, 768×1024 tablet and 390×844 mobile; native evidence expansion, keyboard menu/focus, responsive image loading, no horizontal overflow or image/text overlap. Original motion and reduced-motion logic retained. DPR is 1; high-density pixel coverage verified analytically, not on a physical 2×/3× device. Final preview validation is recorded in PR #8.
+
 ## 2026-10-19 — Cinematic Journey review branch
 
 - Owner explicitly approved a substantial Cinematic Journey website redesign with premium executive typography. This supersedes older no-redesign guidance for this task only. Baseline: main c800092. Branch: feature/cinematic-executive-journey. Review only: no merge or production approval.

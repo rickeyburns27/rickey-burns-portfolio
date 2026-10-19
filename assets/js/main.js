@@ -74,22 +74,32 @@
       const figure = el('div', 'case-image');
       const img = el('img');
       img.src = entry.image;
+      if (entry.responsiveImage) {
+        const base = `assets/images/${entry.responsiveImage}`;
+        img.src = `${base}-1440.webp`;
+        img.srcset = [720, 1440, 2160].map(width => `${base}-${width}.webp ${width}w`).join(', ');
+        img.sizes = '(max-width: 480px) calc(100vw - 40px), (max-width: 800px) calc(100vw - 56px), (max-width: 1416px) 50vw, 660px';
+      }
       img.alt = entry.alt;
       img.loading = 'lazy';
-      img.width = 1248; img.height = 528;
+      img.decoding = 'async';
+      img.width = entry.responsiveImage ? 1440 : 1248;
+      img.height = entry.responsiveImage ? 960 : 528;
       figure.append(img, el('span', 'case-number', entry.number));
       const body = el('div', 'case-content');
       body.append(el('div', 'case-kicker', entry.kicker), el('h3', '', entry.title), el('p', 'case-description', entry.detail));
+      if (entry.outcome) body.append(el('p', 'case-outcome', entry.outcome));
       const tags = el('div', 'case-tags');
       entry.tags.forEach(tag => tags.append(el('span', '', tag)));
       body.append(tags);
       const proof = window.PORTFOLIO_CASE_PROOF?.[index];
       if (proof) {
         const disclosure = el('details', 'case-proof');
-        const summary = el('summary', '', 'Leadership & outcome');
+        const summary = el('summary', '', 'Explore the integration story');
         const description = el('dl');
-        description.append(el('dt', '', 'Leadership action'), el('dd', '', proof.action),
-          el('dt', '', 'Demonstrated result'), el('dd', '', proof.result));
+        description.append(el('dt', '', 'Challenge'), el('dd', '', proof.challenge),
+          el('dt', '', 'My Leadership'), el('dd', '', proof.action),
+          el('dt', '', 'Business Outcome'), el('dd', '', proof.result));
         disclosure.append(summary, description);
         body.append(disclosure);
       }
