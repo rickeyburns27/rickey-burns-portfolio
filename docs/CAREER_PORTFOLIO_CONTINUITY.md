@@ -3,6 +3,7 @@ Updated: 2026-10-18
 
 ## 2026-10-18 — Executive Impact Brief redesign and network icon
 
+- Implementation commit `22f24d8`; verified preview https://e2576b47.rickey-burns-portfolio.pages.dev/ . Both actual staging downloads match repository bytes; the brief is two pages and resume remains unchanged.
 - Owner authorized expanding the case-study download to two pages and updating existing PR #7 on `feature/branded-executive-downloads`. No general website redesign, merge, or production deployment authorized.
 - The former one-page case study is now the two-page Executive Impact Brief. Editable source and stable PDF filename remain `assets/docs/case-study-source.html` and `assets/docs/Rickey_Burns_Enterprise_Transformation_Case_Study.pdf`. Poster shows the new page 1; website copy, alt/ARIA labels, page-count badge, README and repository verification reflect two pages.
 - Page 1: cinematic mountain-road hero, one focal 50% result, $60M+ enterprise portfolio and 25-of-25 completion, six-month-to-three-month visual comparison, and 100% completion of committed milestones. Exactly six blue and three green arrows.
