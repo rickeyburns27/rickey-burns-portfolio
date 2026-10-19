@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rickey Burns, PMP | Enterprise Transformation &amp; Strategic Operations — Case Study</title>
+<style>
+* { box-sizing: border-box; }
+:root { --navy:#0c2038; --navy2:#173453; --blue:#276caa; --cyan:#579bd8; --green:#6fbd81; --ink:#132a43; --muted:#62778c; --light:#f0f5f8; }
+@page { size: letter portrait; margin: 0; }
+html, body {margin:0; padding:0; font-family:Arial,'Helvetica Neue',sans-serif; color:var(--ink);background:#dce7ee; -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+.paper { width:816px;height:1056px;margin:0 auto;background:white;position:relative;overflow:hidden; }
+.hero {height:199px;background:linear-gradient(90deg,rgba(12,35,56,.99) 0%,rgba(12,35,56,.93) 49%,rgba(12,35,56,.42) 76%,rgba(12,35,56,.16) 100%),url('../images/mountain-road-case-study.png') right 51% / cover no-repeat; color:white;display:flex;align-items:center;padding:24px 30px;position:relative;}
+.hero::after {content:'';position:absolute;left:30px;right:30px;bottom:0;height:3px;background:linear-gradient(90deg,#49b6d1,#88c978,transparent 72%);}
+.portrait {width:120px;height:120px;object-fit:cover;border-radius:50%;border:4px solid #bfe1eb;box-shadow:0 8px 22px rgba(0,0,0,.24);flex:none;background:white;}
+.hero-copy {padding-left:22px;max-width:510px;}
+.kicker {font-size:10px;letter-spacing:2.1px;font-weight:800;text-transform:uppercase;color:#79daea;margin:0 0 8px;}
+h1 {font-size:30px;line-height:1.03;margin:0 0 6px;letter-spacing:.1px;color:white;}
+.role {font-size:12px;letter-spacing:1.3px;font-weight:800;color:#cef3ff;margin:0 0 12px;}
+.hero p {font-size:11.6px;line-height:1.47;margin:0;color:#eefaff;max-width:460px;}
+.upper {padding:19px 28px 0;}
+.stats {display:grid;grid-template-columns:repeat(6,1fr);gap:7px;}
+.stat {text-align:center;padding:12px 4px 10px;min-height:111px;background:#eff5f8;border-top:3px solid #287cb0;border-radius:8px;}
+.stat:nth-child(2){border-top-color:#73b467}.stat:nth-child(4){border-top-color:#6aa8b1}.stat:nth-child(6){border-top-color:#64ae75}
+.stat .number {display:block;font-size:25px;color:#0e466e;line-height:1.04;font-weight:900;letter-spacing:-.7px;margin-bottom:5px;}
+.stat:nth-child(2) .number,.stat:nth-child(6) .number{color:#3c8d56}
+.stat .label {font-size:9.6px;line-height:1.13;font-weight:800;text-transform:uppercase;letter-spacing:.2px;min-height:22px;}
+.stat .sub {display:block;font-size:9.2px;line-height:1.23;margin-top:5px;color:#617282;}
+.section-head {display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:10px;}
+.section-head h2{font-size:16px;letter-spacing:.1px;color:var(--navy);margin:0;font-weight:850;}
+.section-note{font-size:10px;color:#567083;margin:0;}
+.career {margin-top:21px;}
+.progress {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;position:relative;}
+.progress::before {content:'';position:absolute;left:42px;right:42px;top:21px;height:3px;background:#8ab6cd;z-index:0;}
+.step {background:#f4f8fa;border:1px solid #e0eaf0;border-radius:8px;padding:9px 10px 10px;min-height:116px;position:relative;z-index:1;}
+.step-head {display:flex;align-items:center;gap:7px;margin-bottom:6px;}
+.circle {width:25px;height:25px;border-radius:50%;display:flex;justify-content:center;align-items:center;color:white;background:#1a6795;flex:none;font-size:13px;font-weight:900;border:2px solid white;box-shadow:0 0 0 1px #accbdb;}
+.step:nth-child(2) .circle{background:#4e9c5e}.step:nth-child(3) .circle{background:#246c93}.step:nth-child(4) .circle{background:#243e56}
+.step h3{font-size:10px;line-height:1.14;margin:0;font-weight:800;color:#123c5a;text-transform:uppercase;}
+.step p{font-size:10px;line-height:1.36;margin:0;color:#526c7c;}
+.process {margin-top:18px;background:#e9f2f6;border-radius:10px;padding:13px 17px 14px;border:1px solid #dce9ef;}
+.process .section-head{margin-bottom:8px}
+.rows{display:grid;grid-template-columns:146px 1fr 77px;gap:9px;align-items:center;}
+.process-label{font-size:11px;color:#1e4760;font-weight:800;}
+.process-label span{display:block;font-size:9px;color:#62798a;font-weight:500;margin-top:2px;}
+.arrowline{display:flex;gap:3px;align-items:center;height:26px;}
+.arrowline .arrow {flex:1;align-self:stretch;background:#23668f;clip-path:polygon(0% 0%,calc(100% - 13px) 0%,100% 50%,calc(100% - 13px) 100%,0% 100%,13px 50%);}
+.arrowline .arrow:first-child {clip-path:polygon(0 0,calc(100% - 13px) 0,100% 50%,calc(100% - 13px) 100%,0 100%);}
+.arrowline.green .arrow{background:#58a464}
+.arrowline.green{max-width:49.7%}
+.time{text-align:right;font-weight:900;font-size:15px;color:#1b5172;}
+.time.green{color:#31884b}
+.process-divider{height:6px}
+.process-caption{font-size:9.5px;color:#536d80;margin:8px 0 0 155px;}
+.examples {margin-top:17px;}
+.cases {display:grid;grid-template-columns:repeat(3,1fr);gap:11px;}
+.case{border:1px solid #dce8ee;border-radius:9px;background:#f7fafb;overflow:hidden;min-height:237px;box-shadow:0 1px 3px rgba(20,60,80,.05)}
+.case-top {padding:9px 10px 7px;min-height:52px;}
+.case h3{font-size:12px;line-height:1.08;margin:0 0 3px;color:#103e5e;}
+.case .tag{font-size:10px;color:#557182;}
+.case img{width:100%;height:97px;display:block;object-fit:cover}
+.case ul{list-style:none;margin:8px 10px 8px;padding:0;}
+.case li{font-size:9.6px;line-height:1.27;padding-left:12px;position:relative;margin:0 0 5px;}
+.case li:before {content:'';position:absolute;top:4px;left:1px;width:5px;height:5px;border-radius:50%;background:#3f9b70;}
+.footer {margin-top:16px;background:linear-gradient(90deg,#143d57,#0d273d);color:white;min-height:88px;padding:14px 29px 13px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:15px;}
+.footer h2{font-size:16px;line-height:1.13;margin:0 0 6px;color:white;}
+.footer p{font-size:11px;line-height:1.3;color:#bde4ed;margin:0;}
+.footer .pillbox{display:grid;grid-template-columns:repeat(2,auto);column-gap:8px;row-gap:8px;text-align:center}
+.footer .pill{padding:6px 8px;border:1px solid rgba(204,240,246,.35);border-radius:20px;color:#ecfbff;font-size:9px;font-weight:700;}
+/* Print composition shares the portfolio's navy, blue, green and type hierarchy. */
+html,body {font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;}
+.paper {display:flex;flex-direction:column;}
+.hero {flex:none;height:194px;padding:24px 30px;}
+.hero-copy {max-width:558px;}
+.kicker {font-size:9px;letter-spacing:1.8px;color:#a4cde9;}
+h1 {font-family:Arial,sans-serif;font-size:32px;line-height:1.12;font-weight:800;letter-spacing:-.3px;margin-bottom:8px;}
+.role {font-size:10.5px;line-height:1.5;letter-spacing:.9px;margin-bottom:10px;color:#6fbd81;}
+.hero p {font-size:11.5px;line-height:1.5;}
+.upper {flex:1;padding:20px 30px 0;}
+.stats {gap:8px;}
+.stat {min-height:116px;padding:12px 5px 10px;border-radius:7px;background:var(--light);border-top-color:var(--blue);}
+.stat .number {font-size:26px;font-weight:800;letter-spacing:-.5px;margin-bottom:7px;}
+.stat .label {font-size:9px;line-height:1.25;letter-spacing:.25px;min-height:34px;font-weight:750;}
+.stat .sub {font-size:9px;line-height:1.3;margin-top:3px;color:#516879;}
+.section-head {align-items:center;margin-bottom:10px;}
+.section-head h2 {font-family:Arial,sans-serif;font-size:15px;line-height:1.3;letter-spacing:0;font-weight:750;}
+.section-note {font-size:9px;line-height:1.4;text-align:right;}
+.career {margin-top:19px;}
+.progress {gap:10px;}
+.step {padding:10px;min-height:116px;background:#f7fafc;}
+.step-head {min-height:29px;align-items:center;margin-bottom:8px;}
+.step h3 {min-width:0;flex:1;font-size:9.5px;line-height:1.3;letter-spacing:.1px;font-weight:750;}
+.step p {font-size:10px;line-height:1.45;}
+.process {margin-top:17px;padding:13px 16px;background:#edf4f8;}
+.rows {grid-template-columns:142px 1fr 78px;column-gap:10px;row-gap:10px;}
+.arrowline {height:25px;gap:4px;}
+.arrowline .arrow {background:var(--blue);}
+.arrowline.green {max-width:calc((100% - 4px) / 2);}
+.arrowline.green .arrow {background:var(--green-deep,#478e61);}
+.process-caption {margin:9px 0 0 152px;font-size:9.3px;line-height:1.4;}
+.examples {margin-top:17px;}
+.cases {gap:10px;}
+.case {min-height:238px;background:#f7fafc;box-shadow:none;}
+.case-top {padding:10px 11px 8px;min-height:54px;}
+.case h3 {font-size:11.5px;line-height:1.25;font-weight:750;margin-bottom:3px;}
+.case .tag {font-size:9px;line-height:1.3;}
+.case img {height:91px;}
+.case ul {margin:10px 11px;}
+.case li {font-size:9.5px;line-height:1.4;margin-bottom:5px;}
+.footer {flex:none;margin-top:16px;min-height:90px;padding:15px 30px;background:linear-gradient(100deg,#173453,#0c2038);}
+.footer h2 {font-family:Arial,sans-serif;font-size:17px;line-height:1.25;font-weight:750;margin-bottom:6px;}
+.footer p {font-size:10.5px;line-height:1.4;}
+.footer .pill {font-size:8.5px;font-weight:600;}
+@media print { html,body{width:816px;background:white}.paper{margin:0;break-after:avoid} }
+@media screen and (max-width:816px){ body{overflow-x:auto;} .paper{margin:0;} }
+</style>
+</head>
+<body><main class="paper">
+<header class="hero"><img class="portrait" src="../images/rickey-burns.webp" alt="Rickey Burns"><div class="hero-copy"><div class="kicker">People · Systems · Processes · Results</div><h1>Rickey Burns, PMP</h1><div class="role">ENTERPRISE TRANSFORMATION &amp; STRATEGIC OPERATIONS</div><p>I lead complex change by aligning people, technology, and business processes. From multi-location transitions to enterprise programs, I turn competing priorities into accountable delivery and measurable results.</p></div></header>
+<div class="upper">
+<section class="stats" aria-label="Business impact statistics"><div class="stat"><span class="number">25</span><div class="label">Integrations completed</div><span class="sub">Completed in<br>20 months</span></div><div class="stat"><span class="number">$60M</span><div class="label">Annual revenue</div><span class="sub">Across 25<br>integrations</span></div><div class="stat"><span class="number">50%</span><div class="label">Shorter delivery cycle</div><span class="sub">Six to three months</span></div><div class="stat"><span class="number">100+</span><div class="label">Organizations supported</div><span class="sub">Across career</span></div><div class="stat"><span class="number">1,000+</span><div class="label">Employees impacted</div><span class="sub">Across integrations</span></div><div class="stat"><span class="number">100%</span><div class="label">Committed milestones completed</div><span class="sub">Assigned commitments</span></div></section>
+<section class="career"><div class="section-head"><h2>From hands-on execution to enterprise leadership</h2><p class="section-note">Leadership built at every level</p></div><div class="progress"><div class="step"><div class="step-head"><div class="circle">1</div><h3>Field delivery</h3></div><p>On-site technology transitions, employee onboarding, and direct stakeholder support.</p></div><div class="step"><div class="step-head"><div class="circle">2</div><h3>Systems engineering</h3></div><p>Infrastructure, applications, databases, and enterprise technology environments.</p></div><div class="step"><div class="step-head"><div class="circle">3</div><h3>Application &amp; data PM</h3></div><p>Business system conversions, cutovers, migration planning, and operational continuity.</p></div><div class="step"><div class="step-head"><div class="circle">4</div><h3>Enterprise delivery lead</h3></div><p>Governance, teams, executives, vendors, and accountable program delivery.</p></div></div></section>
+<section class="process"><div class="section-head"><h2>Process improvement at scale</h2><p class="section-note">A repeatable playbook. Measurable time savings.</p></div><div class="rows"><div class="process-label">Original process<span>Six-stage delivery</span></div><div class="arrowline" aria-label="Six original delivery stages"><div class="arrow"></div><div class="arrow"></div><div class="arrow"></div><div class="arrow"></div><div class="arrow"></div><div class="arrow"></div></div><div class="time">6 months</div><div class="process-label">Streamlined process<span>Three-stage delivery</span></div><div class="arrowline green" aria-label="Three streamlined delivery stages"><div class="arrow"></div><div class="arrow"></div><div class="arrow"></div></div><div class="time green">3 months</div></div><p class="process-caption">Standardized plans, governance, and operating playbooks reduced average delivery time by 50%.</p></section>
+<section class="examples"><div class="section-head"><h2>Real-world transformation examples</h2><p class="section-note">Multi-location complexity. Business continuity. Results.</p></div><div class="cases"><article class="case"><div class="case-top"><h3>6-site transformation</h3><div class="tag">Largest and most complex integration</div></div><img src="../images/six-site.webp" alt="Multi-story office building"><ul><li>Six locations coordinated through one delivery plan</li><li>Aligned technology, teams, and stakeholders</li><li>Completed all committed milestones</li></ul></article><article class="case"><div class="case-top"><h3>5-site transition</h3><div class="tag">50 employees</div></div><img src="../images/five-site.webp" alt="Modern office complex"><ul><li>Integrated five operating locations</li><li>Coordinated technology, data, and user readiness</li><li>Maintained business continuity throughout</li></ul></article><article class="case"><div class="case-top"><h3>3-site New York delivery</h3><div class="tag">$20M annual revenue scope</div></div><img src="../images/new-york.webp" alt="New York City skyline"><ul><li>Coordinated three New York City locations</li><li>Led a high-visibility multi-site transition</li><li>Completed all committed milestones</li></ul></article></div></section>
+</div>
+<footer class="footer"><div><h2>Complex change. Clear direction.</h2><p>Align people. Improve processes. Deliver outcomes.</p></div><div class="pillbox"><span class="pill">People first</span><span class="pill">Systems integration</span><span class="pill">Process improvement</span><span class="pill">Accountable delivery</span></div></footer>
+</main></body></html>

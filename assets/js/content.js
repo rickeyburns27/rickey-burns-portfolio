@@ -12,11 +12,11 @@ window.PORTFOLIO_CONTENT = {
     { stage: '01', title: 'Field integration', details: 'On-site agency onboarding, technology deployment, and direct support for employees.', icon: 'truck' },
     { stage: '02', title: 'Systems engineering', details: 'Infrastructure, applications, databases, and the realities of acquired technology environments.', icon: 'server' },
     { stage: '03', title: 'Application & data migration PM', details: 'Applied Epic, conversions, cutovers, stakeholder alignment, and business continuity.', icon: 'document' },
-    { stage: '04', title: 'Accountable integration leader', details: 'Leading project managers, engineers, and cross-functional teams responsible for delivery.', icon: 'people' }
+    { stage: '04', title: 'Accountable integration leader', details: 'Leading project managers, engineers, and cross-functional teams accountable for delivery.', icon: 'people' }
   ],
   cases: [
-    { number: '01', title: 'The six-site integration', kicker: 'MULTI-LOCATION DELIVERY', image: 'assets/images/six-site.webp', alt: 'Modern commercial office building', detail: 'The largest multi-site integration I led, bringing six locations through a coordinated transition.', tags: ['6 locations', 'Team coordination', 'Delivery ownership'] },
-    { number: '02', title: 'Five sites. Fifty people.', kicker: 'PEOPLE + TECHNOLOGY', image: 'assets/images/five-site.webp', alt: 'Modern office building with a glass facade', detail: 'Coordinated the transition of five locations and approximately 50 employees, keeping daily business operations moving.', tags: ['5 locations', '~50 employees', 'Business continuity'] },
+    { number: '01', title: 'Six-site operational transition', kicker: 'MULTI-LOCATION DELIVERY', image: 'assets/images/six-site.webp', alt: 'Modern commercial office building', detail: 'The largest multi-site integration I led, bringing six locations through a coordinated transition.', tags: ['6 locations', 'Team coordination', 'Delivery ownership'] },
+    { number: '02', title: 'Five sites. Fifty employees.', kicker: 'PEOPLE + TECHNOLOGY', image: 'assets/images/five-site.webp', alt: 'Modern office building with a glass facade', detail: 'Coordinated the transition of five locations and approximately 50 employees, keeping daily business operations moving.', tags: ['5 locations', '~50 employees', 'Business continuity'] },
     { number: '03', title: 'Three locations across NYC', kicker: 'HIGH-COMPLEXITY INTEGRATION', image: 'assets/images/new-york.webp', alt: 'New York City skyline with the Empire State Building', detail: 'Integrated a three-site New York City operation representing $20M in annual revenue, with complex logistics and stakeholder needs.', tags: ['3 NYC locations', '$20M annual revenue', 'Cross-site delivery'] }
   ],
   principles: [
