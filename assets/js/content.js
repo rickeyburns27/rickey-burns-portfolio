@@ -1,7 +1,7 @@
 /* EDIT CONTENT HERE — data-driven text and cards. No layout rebuild required. */
 window.PORTFOLIO_CONTENT = {
   metrics: [
-    { value: 25, suffix: '', label: 'Simultaneous initiatives', detail: 'All 25 completed in 20 months', icon: 'gear', accent: 'blue' },
+    { value: 25, suffix: '', label: 'Simultaneous initiatives', detail: 'All 25 completed in 20 months', icon: 'layers', accent: 'blue' },
     { value: 60, suffix: 'M+', prefix: '$', label: 'Enterprise portfolio', detail: '25 simultaneous initiatives', icon: 'bars', accent: 'green' },
     { value: 50, suffix: '%', label: 'Shorter delivery cycle', detail: 'Playbook reduced from 6 months to 3', icon: 'clock', accent: 'blue' },
     { value: 100, suffix: '+', label: 'Organizations supported', detail: 'Experience across my career', icon: 'building', accent: 'navy' },
