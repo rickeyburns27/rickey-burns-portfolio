@@ -28,6 +28,7 @@ html{scroll-padding-top:100px}body{background:var(--surface);font-size:16px}h1,h
 .built-apps-section .eyebrow,.contact-section .eyebrow{color:#32744b}
 
 /* Targeted case evidence emphasis; approved Cinematic Journey layout retained. */
+.principles-section h2 em{color:var(--green)}
 .case-description{min-height:0;margin-bottom:0}
 .case-outcome{color:#286342;border-left:2px solid #6b9c7c;padding-left:13px;margin:16px 0 0;font-size:13px;font-weight:650;line-height:1.65}
 @media(max-width:480px){.case-outcome{font-size:12px}}
